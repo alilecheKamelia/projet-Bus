@@ -1,0 +1,12 @@
+1) se placer dans le dossier ou il existe docker-compose.yml et lancer la commande suivante:
+
+sudo docker-compose up
+
+2) lancer la commande suivante pour lancer
+mongo admin -u user -p password
+design pattern bridj
+
+
+mysql
+mysql -h 127.0.0.1 -P 3306 -u root -p
+cat Schema+Data.sql | mysql -h 127.0.0.1 -P 3306 -u root -p

@@ -1,0 +1,89 @@
+= projet M1 MIAGE - semestre 1
+Frédéric Moal, Yohan Boichut
+version 2020-2021
+
+
+*********************************
+ETAPES ET COMMANDE DE LANCEMENT 
+
+1) se placer dans le dossier ou il existe docker-compose.yml et lancer la commande suivante:
+
+sudo docker-compose up
+si il y a un programme qui ecoute sur le meme port il faut l'arréter avec la commande suivante avant de lancer docker-compose :
+
+sudo systemctl stop programme
+
+
+mongo
+2) lancer la commande suivante pour lancer
+mongo admin -u user -p password
+
+
+mysql
+3) lancer les commandes suivantes pour lancer
+
+cat Schema+Data.sql | mysql -h 127.0.0.1 -P 3306 -u root -p
+mysql -h 127.0.0.1 -P 3306 -u root -p
+
+*********************************
+
+== Contexte
+Nous voulons développer un système de gestion de transports en commun. En particulier, nous voulons un système permettant de gérer les abonnements des clients et leurs trajets. 
+Un client doit valider son titre de transport à chaque changement de bus/tram. Un titre est valide pendant une heure. Ce projet sera développé sur l'année complète. 
+
+== Fonctionnalités
+
+Nous devrons pouvoir
+
+* S'inscrire à la plate-forme (nom, mot de passe)
+* Se désinscrire
+* Se connecter à son espace personnel
+* Se déconnecter
+* Souscrire à un abonnement mensuel ou annuel
+* Commander un certain nombre de titres (vendables à l'unité ou par 10).  
+* valider un titre de transport sur un terminal dédié
+
+
+
+
+== Contraintes structurelles
+
+Vous disposerez d'un repo Git que vous *DEVREZ* utiliser pour l'ensemble de votre projet :
+
+. code source commenté
+. fichiers de configuration
+. jeux de données de test/démo pour la validation du modèle
+
+
+Votre projet devra être un projet Maven groupid:artifactId où :
+fr.miage.orleans.projetm1s2:groupe?
+avec ? est la lettre de votre groupe
+
+Le déploiement des bases de données devront se faire AUTOMATIQUEMENT par un docker-compose (hors de question d'installer à la main une mongodb ou un mysql). 
+
+
+
+== Travail demandé
+
+Pour le premier semestre, nous voulons le développement complet du modèle et de la persistance en BD. 
+Il devrait y avoir une BD gérant le catalogue des abonnements et  des clients. Une autre permettant de gérer toutes les validations et les trajets. 
+Quand nous disons "modèle", on entend une façade regroupant toutes les fonctionnalités de votre modèle. 
+
+
+
+== Technos
+
+Vous devrez utiliser les technos suivantes :
+
+* MySql (obligatoire)
+* MongoDB (obligatoire)
+
+
+
+== FAQ
+
+Une FAQ sera disponible à l'adresse : https://pdicost.univ-orleans.fr/wiki/pages/viewpage.action?pageId=101285890. 
+Vous pourrez poser vos questions sur cet espace et nous ferons de même pour y répondre.
+
+
+
