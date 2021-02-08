@@ -1,6 +1,3 @@
-= projet M1 MIAGE - semestre 1
-Frédéric Moal, Yohan Boichut
-version 2020-2021
 
 
 *********************************
@@ -55,9 +52,6 @@ Vous disposerez d'un repo Git que vous *DEVREZ* utiliser pour l'ensemble de votr
 . jeux de données de test/démo pour la validation du modèle
 
 
-Votre projet devra être un projet Maven groupid:artifactId où :
-fr.miage.orleans.projetm1s2:groupe?
-avec ? est la lettre de votre groupe
 
 Le déploiement des bases de données devront se faire AUTOMATIQUEMENT par un docker-compose (hors de question d'installer à la main une mongodb ou un mysql). 
 
