@@ -1,0 +1,52 @@
+-------------------------------------
+			  Databases
+-------------------------------------
+
+MySQL (Abonnements & Clients) :
+
+	- User
+		> id
+		> Name
+		> Password
+
+	- Subscription
+		> id
+		> status (active, expired...)
+		> start_date
+		> end_date
+		> type (monthly, annually)
+		> ticket_id
+
+
+MongoDB (Validations & Trajets) : 				// Every id is implemented using the built-in id mecanism of mongo
+	
+	- Tickets
+		> id
+		> user_id
+		> allowed_uses (-1 : non-consumable | 0 : expired | n : number of uses allowed)
+		> consumable (True, False)
+
+		> ticketValidations[...]
+		    - TicketValidation
+		        > station_id
+		        > validation_date
+
+
+	- Stations
+		> id
+		> nickname
+
+        > ticketValidations[...]
+            - StationValidation
+                > ticket_id
+                > validation_date
+        > paths[...]
+            - path_id
+
+
+	- Paths
+		> id
+		> nickname
+
+        > stations[...]
+            - station_id

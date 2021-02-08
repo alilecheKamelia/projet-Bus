@@ -1,0 +1,72 @@
+[{
+  "_id": {
+    "$oid": "5ff885883840b60207f870fb"
+  },
+  "nickname": "Station 0",
+  "station_validations": [],
+  "paths": [
+    "5ff885883840b60207f87101"
+  ]
+},{
+  "_id": {
+    "$oid": "5ff885883840b60207f870fc"
+  },
+  "nickname": "Station 1",
+  "station_validations": [
+    {
+      "ticket_id": "5ff88f5af9aeea0f07291c5e",
+      "validation_date": "2021-01-08 18:22:14"
+    },
+    {
+      "ticket_id": "5ff88f5af9aeea0f07291c5e",
+      "validation_date": "2021-01-08 18:24:39"
+    },
+    {
+      "ticket_id": "5ff8951a830b9077b241b487",
+      "validation_date": "2021-01-08 18:25:22"
+    },
+    {
+      "ticket_id": "5ff8960c319b4a4d359b968d",
+      "validation_date": "2021-01-08 18:28:13"
+    }
+  ],
+  "paths": [
+    "5ff885883840b60207f87101"
+  ]
+},{
+  "_id": {
+    "$oid": "5ff885883840b60207f870fd"
+  },
+  "nickname": "Station 2",
+  "station_validations": [],
+  "paths": [
+    "5ff885883840b60207f87101"
+  ]
+},{
+  "_id": {
+    "$oid": "5ff885883840b60207f870fe"
+  },
+  "nickname": "Station 3",
+  "station_validations": [],
+  "paths": [
+    "5ff885883840b60207f87102"
+  ]
+},{
+  "_id": {
+    "$oid": "5ff885883840b60207f870ff"
+  },
+  "nickname": "Station 4",
+  "station_validations": [],
+  "paths": [
+    "5ff885883840b60207f87102"
+  ]
+},{
+  "_id": {
+    "$oid": "5ff885883840b60207f87100"
+  },
+  "nickname": "Station 5",
+  "station_validations": [],
+  "paths": [
+    "5ff885883840b60207f87102"
+  ]
+}]

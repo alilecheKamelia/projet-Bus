@@ -1,0 +1,60 @@
+[{
+  "_id": {
+    "$oid": "5ff88f5af9aeea0f07291c5e"
+  },
+  "user_id": 83,
+  "status": 1,
+  "allowed_uses": -1,
+  "consumable": false,
+  "ticket_validations": [
+    {
+      "station_id": "5ff885883840b60207f870fc",
+      "validation_date": "2021-01-08 18:22:14"
+    },
+    {
+      "station_id": "5ff885883840b60207f870fc",
+      "validation_date": "2021-01-08 18:24:39"
+    }
+  ],
+  "price": 20
+},{
+  "_id": {
+    "$oid": "5ff8951a830b9077b241b487"
+  },
+  "user_id": 81,
+  "status": 0,
+  "allowed_uses": 0,
+  "consumable": true,
+  "ticket_validations": [
+    {
+      "station_id": "5ff885883840b60207f870fc",
+      "validation_date": "2021-01-08 18:25:22"
+    }
+  ],
+  "price": 20
+},{
+  "_id": {
+    "$oid": "5ff8960c319b4a4d359b968d"
+  },
+  "user_id": 81,
+  "status": 0,
+  "allowed_uses": 0,
+  "consumable": true,
+  "ticket_validations": [
+    {
+      "station_id": "5ff885883840b60207f870fc",
+      "validation_date": "2021-01-08 18:28:13"
+    }
+  ],
+  "price": 20
+},{
+  "_id": {
+    "$oid": "5ff98e5c55d3fa320e066ef6"
+  },
+  "user_id": 81,
+  "status": 1,
+  "allowed_uses": 1,
+  "consumable": true,
+  "price": 50,
+  "ticket_validations": []
+}]
